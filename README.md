@@ -6,6 +6,9 @@ This project create to learn React and using this we will show write todos list
 
 we have used bootstarp to style the project
 
+### Navbar
+    https://getbootstrap.com/docs/5.0/components/navbar/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
