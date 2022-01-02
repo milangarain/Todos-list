@@ -23,7 +23,7 @@ export default function Todos(props) {
 
 Todos.defaultProps = {
     todoList: [{
-        SNO: 1,
+        SNo: 1,
         name: "Todo Item Name",
         desp: "Description here."
     }]

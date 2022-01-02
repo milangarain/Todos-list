@@ -10,8 +10,8 @@ export const Footer = () => {
         textAlign: 'center'
     }
     return (
-        <div>
+        <footer>
             <p className='bg-dark py-2' style = {myStyle}>Copyright &copy; TodoList</p>
-        </div>
+        </footer>
     )
 }
