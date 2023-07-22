@@ -3,6 +3,7 @@ import Header from "./MyComponents/Header";
 import Todos from "./MyComponents/Todos";
 import { Footer } from "./MyComponents/Footer";
 import React, { useState } from 'react';
+import AddTodoItem from "./MyComponents/AddTodoItem";
 
 function App() {
   const [todoList, setTodoList] = useState([{
@@ -19,6 +20,8 @@ function App() {
     desp: "List down new year resolutions and follow strictly"
   }]);
 
+  const [sNO, setSNo] = useState(4);
+
   const onDelete = (todoItem) => {
     console.log("please delete todo item : ",todoItem.name);
 
@@ -26,10 +29,18 @@ function App() {
       return e !== todoItem;
     }))
   };
+
+  const onAddTodoItem = (todoItem) => {
+    todoItem.SNo = sNO;
+    todoList.push(todoItem);
+    setTodoList(todoList);
+    setSNo(sNO+1);
+  }
   
   return (
     <div className="App">
       <Header title="My TodoList" searchBar={false} />
+      <AddTodoItem className= "my-3" onAddTodoItem = {onAddTodoItem}/>
       <Todos todoList={todoList} onDelete={onDelete} />
       <Footer />
     </div>
