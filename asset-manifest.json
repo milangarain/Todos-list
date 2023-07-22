@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/milangarain/Todos-list/static/css/main.13f711b7.css",
+    "main.js": "/milangarain/Todos-list/static/js/main.6a145544.js",
+    "index.html": "/milangarain/Todos-list/index.html",
+    "main.13f711b7.css.map": "/milangarain/Todos-list/static/css/main.13f711b7.css.map",
+    "main.6a145544.js.map": "/milangarain/Todos-list/static/js/main.6a145544.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13f711b7.css",
+    "static/js/main.6a145544.js"
+  ]
+}
